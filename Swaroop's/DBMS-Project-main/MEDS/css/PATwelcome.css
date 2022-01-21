@@ -1,0 +1,81 @@
+body {
+    background: -webkit-linear-gradient(#71b7e6, #00FFBF);
+}
+
+.navdiv {
+    background: -webkit-linear-gradient(#71b7e6, #00FFBF);
+    height: 100%;
+}
+
+.navbar {
+    display: grid;
+    /* background-color: blue; */
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr 1fr;
+    box-shadow: 0px 0px 20px 0px rgb(79, 129, 129);
+    ;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: "Audiowide", sans-serif; */
+    font-size: 20px;
+    color: white;
+    /* position: absolute; */
+    grid-column: 1/2;
+}
+
+.logo .logoa {
+    text-decoration: none;
+    font-family: "Audiowide", sans-serif;
+    color: white;
+}
+
+.links {
+    grid-column: 4/6;
+    /* display:grid; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.links .ullists {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links .link1 {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.links .link1:hover {
+    /* font-size: 22px; */
+    transition: .1s ease-in;
+    /* position: absolute; */
+    opacity: 0.5;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+#logout {
+    color: white;
+    text-decoration: none;
+    background-color: #ff5656;
+    padding: 10px;
+    border: 1px solid #fff;
+    /* border-radius: 8px;*/
+} 
+

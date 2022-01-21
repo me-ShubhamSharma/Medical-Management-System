@@ -1,0 +1,209 @@
+body {
+    background: -webkit-linear-gradient(#71b7e6, #00FFBF);
+}
+
+.navdiv {
+    background: -webkit-linear-gradient(#71b7e6, #00FFBF);
+    height: 100%;
+}
+
+.navbar {
+    display: grid;
+    /* background-color: blue; */
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr 1fr;
+    border-bottom: 2px solid white;
+    box-shadow: 0px 0px 20px 0px rgb(79, 129, 129);;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Audiowide", sans-serif;
+    font-size: 20px;
+    color: white;
+    /* position: absolute; */
+    grid-column: 1/2;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.links {
+    grid-column: 4/6;
+    /* display:grid; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.links .unlist1 {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links .list1 {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.links .suplist1 {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.links .list1:hover {
+    /* font-size: 22px; */
+    transition: .1s ease-in;
+    /* position: absolute; */
+    opacity: 0.5;
+}
+
+.suplist1:hover {
+    transition: .1s ease-in;
+    opacity: 0.5;
+}
+
+.dropdiv:hover .hidlist{
+    display:block;
+}
+
+.hidlist{
+    display:flex;
+    height: 100px;
+    width: 120px;
+    position: absolute;
+    margin-top: 25px;
+    /* margin-left: 60px; */
+    /* border:2px solid black; */
+    justify-content: center;
+    /* z-index: 1; */
+    display: none;
+    box-shadow: 0 0 5px 1px rgb(79, 129, 129);
+}
+
+.unlist, .list2{
+    display: flex;
+    flex-direction: column;
+    list-style: none;  
+    text-decoration: none;
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.unlist button{
+    width:120px;
+    margin-left:-40px;
+    height:50px;
+    background-color: aquamarine;
+    border:none;
+    border-bottom:1px solid rgb(160, 157, 157);
+    /* position: absolute; */
+    text-decoration: none;
+    border-radius: 2px;
+    /* border-bottom-left-radius: none;
+    border-bottom-right-radius: none; */
+}
+
+.unlist button:hover{
+    background-color: rgb(218, 214, 214);
+}
+
+.options{
+    display: flex;
+    position: absolute;
+    margin:80px;
+    justify-content: space-between;
+}
+
+.options button{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.presctable{
+    height:100%;
+    width:60%;
+    /* position:absolute; */
+    border: 2px solid white;
+    margin-top:150px;
+    margin-left:80px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px rgb(79, 129, 129);
+}
+
+.presctable span{
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.prescbutton {
+    /* display:none; */
+    height:45px;
+    width: 60px;
+    border-radius:100px;
+    background-color: transparent;
+    border:2px solid white;
+    font-size: 25px;
+    color:white;
+    box-shadow: 0 0 5px 1px rgb(79, 129, 129);
+}
+
+.prescbutton text{
+    font-size: 20px;
+    display: none;
+}
+
+@media (min-width: 80px) {
+    .prescbutton:hover text {
+        display:inline;
+        transform:scaleY(120px);
+        transition: 0.2 ease-out;
+        /* position:absolute; */
+    }
+}
+
+.prescbutton:hover{
+    height:45px;
+    width: 120px;
+    transition: .5s;
+    transform: scaleY(120px);
+    letter-spacing: 2px;
+}
+
+.sendbtn{
+    height:45px;
+    width: 80px;
+    border-radius:100px;
+    background-color: transparent;
+    border:2px solid white;
+    font-size: 25px;
+    color:white;
+    box-shadow: 0 0 5px 1px rgb(79, 129, 129);
+    margin-top:20px;
+    margin-left:850px;
+    cursor: pointer;
+}
+
+.sendbtn:hover{
+    background-color: rgb(5, 165, 165);
+}
